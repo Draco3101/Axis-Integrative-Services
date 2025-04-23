@@ -221,7 +221,7 @@
 
                 <!-- Contact input boxes -->
                 <div class="contact_fields">
-                    <form name="contact" id="contact-form" method="POST" onsubmit="return confirmDisclaimer(event)" netlify>
+                    <form name="contact" id="contact-form" method="POST" netlify>
                         <input type="hidden" name="form-name" value="contact"> <!-- netlify link -->
                         <!-- Name -->
                         <div class="field_group">
@@ -247,7 +247,7 @@
                         </div>
                         <!-- Submit Button -->
                         <div class="submit_button">
-                            <button type="submit" class="submit_contact">Submit</button>
+                            <button type="submit" class="submit_contact" id="contact-button" onclick="return confirmDisclaimer(event)">Submit</button>
                         </div>
                     </form>
                 </div>

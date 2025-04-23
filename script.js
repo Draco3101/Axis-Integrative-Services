@@ -103,7 +103,7 @@ function showTooltip(tooltip, message) {
 }
 
 // Confidential Information Warning, triggered on form submission
-const form = document.getElementById('contact-form');
+const form = document.getElementById('contact-button');
 
 function confirmDisclaimer(event) {
     const confirmed = confirm(
