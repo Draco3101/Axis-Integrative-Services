@@ -103,22 +103,22 @@ function showTooltip(tooltip, message) {
 }
 
 // Confidential Information Warning, triggered on form submission
-// const form = document.getElementById('contact-form');
+const form = document.getElementById('contact-form');
 
-// function confirmDisclaimer(event) {
-//     const confirmed = confirm(
-//         "Please do not include personal or medical information in inquiries. " +
-//         "For private matters, please make an appointment, or call us directly " +
-//         "at (315) 729-5964.\n\nSelect OK to confirm and send."
-//     );
+function confirmDisclaimer(event) {
+    const confirmed = confirm(
+        "Please do not include personal or medical information in inquiries. " +
+        "For private matters, please make an appointment, or call us directly " +
+        "at (315) 729-5964.\n\nSelect OK to confirm and send."
+    );
 
-//     if (!confirmed) {
-//         event.preventDefault(); // Stop the form submission only if they cancel
-//         return false;
-//     }
-//     // If confirmed, form submits normally
-//     return true;
-// };
+    if (!confirmed) {
+        event.preventDefault(); // Stop the form submission only if they cancel
+        return false;
+    }
+    // If confirmed, form submits normally
+    return true;
+};
 
 // const map = new google.maps.Map(document.getElementById("map"), {
 //     zoom: 15,
