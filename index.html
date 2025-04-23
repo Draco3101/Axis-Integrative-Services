@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axis Integrative Services</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="script.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="container navbar_container">
+            <a href="#" class="title">Axis Integrative Services</a>
+
+            <div class="menu_icon" id="menu_icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Landing Page -->
+    <section id="hero" class="flex_center hero">
+        <div class="container flex_center hero-content">
+            <h1>Professional mental health services close to home</h1>
+            <h2>Serving Yates County and surrounding areas through in person, and telehealth services</h2>
+            <a class="btn hero-button" href="#about">Learn More</a>
+        </div>
+        <div class="gradient-overlay"></div> <!-- graphical section transition -->
+    </section>
+
+    <!-- Info Cards -->
+    <section class="card-container">
+        
+        <!-- Card 1 -->
+        <article class="card">
+            <div class="card_content">
+                <h3>Have Any Questions?</h3>
+                    <svg width="120" height="120" viewBox="0 0 120 120">
+                            <title>Questions?</title>
+                        <desc>A magnifying glass over documents</desc>
+                        <image width="120" height="120" href="undraw_file_search.svg" />
+                    </svg>
+                <p>Send a message and get in touch</p>
+                <a href="#contact" class="btn button">Contact Us</a> <!-- Navigation to Contact -->
+            </div>
+        </article>
+    
+        <!-- Card 2 -->
+        <article class="card">
+            <div class="card_content">
+                <h3>Schedule An Appointment</h3>
+                    <svg width="120" height="120" viewBox="0 0 120 120">
+                        <title>Schedule</title>
+                        <desc>A woman holding a calendar</desc>
+                        <image width="120" height="120" href="undraw_calendar.svg" />
+                    </svg>
+                <p>Visit patient portal to schedule and view availabilities</p>
+                <a href="https://secure.helloalma.com/providers/annmarie-flanagan/"
+                target="_blank" class="btn button">View Portal
+                </a> <!-- Hyperlink to Alma -->
+            </div>
+        </article>
+    
+        <!-- Card 3 -->
+        <article class="card">
+            <div class="card_content">
+                <h3>Accepted Insurances</h3>
+                    <svg width="120" height="120" viewBox="0 0 120 120">
+                        <title>Insurance</title>
+                        <desc>A woman handling paperwork</desc>
+                        <image width="120" height="120" href="undraw_filing_system.svg" />
+                    </svg>
+                <p>Wondering if we accept your insurance?</p>
+                <a href="#insurances" class="btn button">View</a> <!-- Navigation to Insurance -->
+            </div>
+        </article>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container about_section">
+            <h2>Who We Are</h2>
+            <div class="flex_center about_content">
+                <img src="headshot.jpeg" alt="Annmarie Flanagan" class="about_image" />
+                <div class="about_text">
+                    <!-- Personal Bio -->
+                    <h4>Annmarie Flanagan</h4>
+                    <p>A board-certified Family Nurse Practitioner and Psychiatric Mental
+                    Health Nurse Practitioner. Who has been in the nursing field for over
+                    30 years. Her main focus is on working with the individual and family
+                    to get them to their highest level of mental health. Top specialties
+                    include medication management and wellness coaching, as well as the
+                    treatment of depression, bipolar, anxiety, PTSD, OCD, ADD, and ADHD.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container services_container">
+            <h2>Services</h2>
+            <p>Mental health services including 
+                <span class="emphasized_text"> medication management</span>,
+                <span class="emphasized_text"> wellness coaching</span>,
+                and soon <span class="emphasized_text"> hormone support</span>.
+                Specializes in<span class="emphasized_text"> managing</span>
+                and <span class="emphasized_text">treating</span> mental
+                health conditions such as:</p>
+            
+            <!-- List of specialties -->
+            <div>
+                <ul class="list_container">
+                    <li>Depression</li>
+                    <li>Bipolar</li> 
+                    <li>Anxiety</li>
+                    <li>PTSD</li>
+                    <li>OCD</li>
+                    <li>ADD/ADHD</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Insurance Section -->
+    <section id="insurances" class="insurances">
+        <div class="container">
+            <div class="flex_center insurance_container">
+                <div class="insurance_content">
+                    <h2>Accepted Insurances</h2>
+                    <ul class="insurance_list">
+                        <li>Aetna</li>
+                        <li>Blue Cross Blue Shield of Massachusetts</li>
+                        <li>Cigna</li>
+                        <li>Oscar (Optum)</li>
+                        <li>Oxford (Optum)</li>
+                        <li>United Healthcare (Optum)</li>
+                        <li>Or self pay</li>
+                    </ul>
+
+                    <p>Support for Fidelis coming soon!</p>
+
+                </div>
+
+                <!-- Graphic -->
+                <div class="flex_center insurance_svg">
+                    <svg width="300" height="300" viewBox="0 0 300 300">
+                        <title>Therapy</title>
+                        <desc>People illustrations by Storyset</desc>
+                        <image width="300" height="300" href="Psychologist-bro.svg" />
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="flex_center contact">
+        
+        <div class="contact_container">
+            
+            <h2>Contact Us</h2>
+
+            <div class="contact_sides">
+
+                <!-- Contact Information -->
+                <div class="contact_info">
+                    <ul>
+                        <li class="contact-item" data-copy-text="Rural40NP@gmail.com"> <!-- JS Email copy reference -->
+                            <div class="flex_center icons" aria-hidden="true">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="content">
+                                <!-- Icon Content -->
+                                <strong>Email:</strong>
+                                <p><span class="copy-text">Rural40NP@gmail.com</span></p>
+                            </div>
+                            <div class="tooltip">Copied!</div>
+                        </li>
+                        <li class="contact-item" data-copy-text="(315) 729-5964"> <!-- JS Phone copy reference -->
+                            <div class="flex_center icons" aria-hidden="true">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="content">
+                                <!-- Icon Content -->
+                                <strong>Phone:</strong>
+                                <p><span class="copy-text">(315) 729-5964</span></p>
+                            </div>
+                            <div class="tooltip">Copied!</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact input boxes -->
+                <div class="contact_fields">
+                    <form name="contact" id="contact-form" method="POST" netlify>
+                        <input type="hidden" name="form-name" value="contact"> <!-- netlify link -->
+                        <!-- Name -->
+                        <div class="field_group">
+                            <input type="text" name="name" id="name" required class="form_control" />
+                            <span class="form-label">Name</span>
+                        </div>
+                        <!-- Email -->
+                        <div class="field_group">
+                            <input type="text" name="email" id="email" required class="form_control" />
+                            <span class="form-label">Email</span>
+                        </div>
+                        <!-- Message/Inquiry -->
+                        <div class="field_group">
+                            <textarea
+                            name="message"
+                            id="message"
+                            cols="30"
+                            rows="4"
+                            class="form_control"
+                            required
+                            ></textarea>
+                            <span class="form-label">Message</span>
+                        </div>
+                        <!-- Submit Button -->
+                        <div class="submit_button">
+                            <button type="submit" class="submit_contact">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+     <!-- <section class="map_section">
+        <div class="container map_container">
+
+            <h2>Or Locate Us At:</h2>
+
+            <div class="map_content_container">
+                <div class="flex_center map_side">
+                    <div id="map">
+                        
+                    </div>
+                </div>
+
+                <div class="address_side">
+                    <div class="flex_center address_container">
+                        <div class="contact-item" data-copy-text="1 Keuka Business Park, 2466 NY-54A Suite 201, Penn Yan, NY 14527">
+                            <div class="flex_center icons" aria-hidden="true">
+                                <i class="fas fa-map-location-dot"></i>
+                            </div>
+                            <div class="content">
+
+                                <strong>Address:</strong>
+                                <p><span class="copy-text">1 Keuka Business Park, 2466 NY-54A Suite 201, Penn Yan, NY 14527</span></p>
+                            </div>
+                            <div class="tooltip">Copied!</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+     </section> -->
+
+    <footer class="footer">
+        <div class="flex_center container footer_container">
+            <p class="disclaimer">
+                This website including all communication methods are not a substitute for
+                real medical treatment or advice, especially in a timely matter. If you're currently
+                experiencing a physical or mental health crisis please contact either 911 
+                or your local mental health hotline.
+            </p>
+
+            <ul>
+                <li><a href="#" id="attributionsLink">Attributions</a></li>
+                <li><a href="#" id="creditsLink">Credits</a></li>
+            </ul>
+            
+            <h2>Axis Integrative Services</h2>
+        </div>
+            <!-- Modals -->
+            <div id="attributionsModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="attributionsModal">&times;</span>
+                    <h2>Attributions</h2>
+                    <ul class="flex_center">
+                        <li>Landing image taken by Jacob Berna</li>
+                        <li>Card images courtesy of <a href="https://www.undraw.co" target="_blank" rel="noopener noreferrer">unDraw.co</a></li>
+                        <li>Therapist image provided by <a href="https://www.freepik.com" target="_blank" rel="noopener noreferrer">Freepik.com</a></li>
+                    </ul>
+                </div>
+            </div>
+  
+            <div id="creditsModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="creditsModal">&times;</span>
+                    <h2>Credits</h2>
+                    <p class="flex_center">Created and built by Jacob Berna with JavaScript</p>
+                </div>
+            </div>
+    </footer>
+</main>
+</body>
+</html>
