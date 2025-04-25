@@ -120,19 +120,7 @@ function confirmDisclaimer(event) {
     return true;
 };
 
-// const map = new google.maps.Map(document.getElementById("map"), {
-//     zoom: 15,
-//     center: {lat:42.6564, lng:-77.0714},
-// });
-
-// const marker = new google.maps.Marker({
-//     position: {lat:42.6564, lng:-77.0714},
-//     map: map,
-//     title: "Axis Integrative Services",
-// });
-
-
-
+// Modals
 const showModal = (id) => {
     document.getElementById(id).style.display = 'block';
 };
@@ -163,3 +151,26 @@ window.addEventListener('click', (e) => {
     }
 });
 
+// Google Maps location
+let map;
+async function initMap() {
+    // 1 Keuka Business Park, 2466 NY-54A Suite 201, Penn Yan, NY 14527
+    const position = { lat: 42.6565717132261, lng: -77.07104070288685 };
+    // Request needed libraries.
+    //@ts-ignore
+    const { Map } = await google.maps.importLibrary("maps");
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+    // The map, centered at business
+    map = new Map(document.getElementById("map"), {
+        zoom: 14,
+        center: position,
+        mapId: "DEMO_MAP_ID",
+    });
+    // The marker, positioned at Keuka Business Park
+    const marker = new AdvancedMarkerElement({
+        map: map,
+        position: position,
+        title: "Axis Integrative Services",
+    });
+}
+initMap();
